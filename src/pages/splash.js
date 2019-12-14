@@ -38,6 +38,8 @@ class Splash extends React.Component {
                     <Link className="splashButton" onClick={this.splashButton3}>Login</Link>
                 </div>
 
+
+
                 {/* <div className="screenImageContainer">
                     <img className="screenImage" src={"./assets/images/screens_exported_from_sketch_2x_png/HiFi_iPhone_XS_1.png"} alt={"Sketch Screen"} />
 

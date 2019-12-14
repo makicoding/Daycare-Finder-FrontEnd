@@ -8,21 +8,60 @@ import LogoBar from '../components/logo_bar';
 
 class Search extends React.Component {
 
+    handleInputChange = () => {
+
+    }
+
+    opensAtOrBefore = () => {
+
+    }
+
+    closesAtOrAfter = () => {
+
+    }
+
+    sortBy = () => {
+
+    }
+
+    searchButtonClick = () => {
+
+    }
+
     render() {
         return (
 
             <div>
                 <LogoBar></LogoBar>
 
-                {/* <div className="screenImageContainer">
-                    <img className="screenImage" src={"./assets/images/screens_exported_from_sketch_2x_png/HiFi_iPhone_XS_1.png"} alt={"Sketch Screen"} />
+                <p>Find Daycare near:</p>
+				<input type="text" className="form-control" id="search-findDaycareNear" onChange={this.handleInputChange}	name="name" placeholder="Town, Address, Zipcode" autoComplete="off"></input>   
 
-                    <Link className="p1Button1" onClick={this.p1Button1Click}></Link>
+                <p>Opens at or before:</p>
+                <select className="chosen-select" id="search-opensAtOrBefore" onChange={this.opensAtOrBefore}>
+                    <option value="0730">7:30am</option>
+                    <option value="0800">8:00am</option>
+                    <option value="0830">8:30am</option>
+                    <option value="0900">9:00am</option>
+                </select>
 
-                    <Link className="p1Button2" onClick={this.p1Button2Click}></Link>
+                <p>Closes at or after:</p>
+                <select className="chosen-select" id="search-closesAtOrAfter" onChange={this.closesAtOrAfter}>
+                    <option value="1800">6:00pm</option>
+                    <option value="1830">6:30pm</option>
+                    <option value="1900">7:00pm</option>
+                </select>
 
-                    <Link className="p1Button3" onClick={this.p1Button3Click}></Link>
-                </div> */}
+                <p>Sort by:</p>
+                <select className="chosen-select" id="search-sortBy" onChange={this.sortBy}>
+                    <option value="1">Open earliest</option>
+                    <option value="2">Close latest</option>
+                </select>
+
+                <br></br>
+                <br></br>
+
+                <Link className="searchButton" onClick={this.searchButtonClick}>Search</Link>
 
             </div>
             

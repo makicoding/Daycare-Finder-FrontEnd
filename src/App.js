@@ -13,8 +13,8 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" component={splash} />
-          <Route exact path="/page2" component={search} />
-          {/* <Route exact path="/page3" component={saved} /> */}
+          <Route exact path="/search" component={search} />
+          {/* <Route exact path="/saved" component={saved} /> */}
         </Switch>
       </div>
     </Router>
