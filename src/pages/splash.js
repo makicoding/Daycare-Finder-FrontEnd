@@ -8,11 +8,35 @@ import LogoBar from '../components/logo_bar';
 
 class Splash extends React.Component {
 
+    splashButton1 = () => {
+        console.log("Guest button clicked!")
+    }
+
+    splashButton2 = () => {
+        console.log("Sign Up button clicked!")
+    }
+
+    splashButton3 = () => {
+        console.log("Login button clicked!")
+    }
+
     render() {
         return (
 
             <div>
                 <LogoBar></LogoBar>
+                <br></br>
+                <br></br>
+
+                <div className="splashButtonsContainer">
+                    <Link className="splashButton" onClick={this.splashButton1}>Guest</Link>
+                    <br></br>
+                    <br></br>
+                    <Link className="splashButton" onClick={this.splashButton2}>Sign Up</Link>
+                    <br></br>
+                    <br></br>
+                    <Link className="splashButton" onClick={this.splashButton3}>Login</Link>
+                </div>
 
                 {/* <div className="screenImageContainer">
                     <img className="screenImage" src={"./assets/images/screens_exported_from_sketch_2x_png/HiFi_iPhone_XS_1.png"} alt={"Sketch Screen"} />
