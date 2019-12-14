@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import splash from "./pages/splash";
 import search from "./pages/search";
-import saved from "./pages/saved";
+// import saved from "./pages/saved";
 
 // Run "npm start" to start React app.
 // Run "npm i" or "npm i [specific component name]" in the command line if there are any dependencies missing in the node modules folder.
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={splash} />
           <Route exact path="/page2" component={search} />
-          <Route exact path="/page3" component={saved} />
+          {/* <Route exact path="/page3" component={saved} /> */}
         </Switch>
       </div>
     </Router>
