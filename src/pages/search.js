@@ -48,7 +48,7 @@ class Search extends React.Component {
 
                         <Col size="col-md-3">
                             <p>Opens at or before:</p>
-                            <select className="chosen-select" id="search-opensAtOrBefore" onChange={this.opensAtOrBefore}>
+                            <select className="chosen-select dropdown" id="search-opensAtOrBefore" onChange={this.opensAtOrBefore}>
                                 <option value="0730">7:30am</option>
                                 <option value="0800">8:00am</option>
                                 <option value="0830">8:30am</option>
@@ -60,7 +60,7 @@ class Search extends React.Component {
 
                         <Col size="col-md-3">
                             <p>Closes at or after:</p>
-                            <select className="chosen-select" id="search-closesAtOrAfter" onChange={this.closesAtOrAfter}>
+                            <select className="chosen-select dropdown" id="search-closesAtOrAfter" onChange={this.closesAtOrAfter}>
                                 <option value="1800">6:00pm</option>
                                 <option value="1830">6:30pm</option>
                                 <option value="1900">7:00pm</option>
@@ -71,7 +71,7 @@ class Search extends React.Component {
 
                         <Col size="col-md-3">
                             <p>Sort by:</p>
-                            <select className="chosen-select" id="search-sortBy" onChange={this.sortBy}>
+                            <select className="chosen-select dropdown" id="search-sortBy" onChange={this.sortBy}>
                                 <option value="1">Open earliest</option>
                                 <option value="2">Close latest</option>
                             </select>
