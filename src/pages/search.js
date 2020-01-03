@@ -4,6 +4,7 @@ import "./search.css";
 import LogoBar from "../components/logo_bar";
 import { Container, Row, Col } from "../components/grid";
 import "../components/dropdown/dropdown.css";
+import "../components/input_box/inputBox.css";
 
 // Run "npm start" to start React app.
 // Run "npm i" or "npm i [specific component name]" in the command line if there are any dependencies missing in the node modules folder.
@@ -42,7 +43,7 @@ class Search extends React.Component {
                     <Row>
                         <Col size="col-md-3">
                             <p>Find Daycare near:</p>
-                            <input type="text" className="form-control" id="search-findDaycareNear" onChange={this.handleInputChange}	name="name" placeholder="Town, Address, Zipcode" autoComplete="off"></input>
+                            <input type="text" className="form-control inputBox" id="search-findDaycareNear" onChange={this.handleInputChange}	name="name" placeholder="Town, Address, Zipcode" autoComplete="off"></input>
                             <br></br>
                         </Col>
 
