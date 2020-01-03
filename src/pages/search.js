@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import './search.css';
-import LogoBar from '../components/logo_bar';
+import "./search.css";
+import LogoBar from "../components/logo_bar";
 import { Container, Row, Col } from "../components/grid";
+import "../components/dropdown/dropdown.css";
 
 // Run "npm start" to start React app.
 // Run "npm i" or "npm i [specific component name]" in the command line if there are any dependencies missing in the node modules folder.
@@ -78,15 +79,13 @@ class Search extends React.Component {
                             <br></br>
                         </Col> 
                     </Row>
+
+                    <Row>
+                        <Col size="col-md-12">
+                            <Link className="searchButton" onClick={this.searchButtonClick}>Search</Link>
+                        </Col>
+                    </Row>
                 </Container>
-
-
-
-
-                <br></br>
-                <br></br>
-
-                <Link className="searchButton" onClick={this.searchButtonClick}>Search</Link>
 
             </div>
             
