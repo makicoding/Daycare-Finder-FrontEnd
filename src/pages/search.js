@@ -5,6 +5,8 @@ import LogoBar from "../components/logo_bar";
 import { Container, Row, Col } from "../components/grid";
 import "../components/dropdown/dropdown.css";
 import "../components/input_box/inputBox.css";
+import "../components/button/button.css";
+import "../components/horizontal_rule/horizontalRule.css";
 
 // Run "npm start" to start React app.
 // Run "npm i" or "npm i [specific component name]" in the command line if there are any dependencies missing in the node modules folder.
@@ -28,7 +30,7 @@ class Search extends React.Component {
     }
 
     searchButtonClick = () => {
-
+        console.log ("You have clicked the search button!")
     }
 
     render() {
@@ -78,14 +80,17 @@ class Search extends React.Component {
                             </select>
                             <br></br>
                             <br></br>
+                            <br></br>
                         </Col> 
                     </Row>
 
                     <Row>
                         <Col size="col-md-12">
-                            <Link className="searchButton" onClick={this.searchButtonClick}>Search</Link>
+                            <button className="searchButton" onClick={this.searchButtonClick}>Search</button>
                         </Col>
                     </Row>
+
+                    <hr className="hr1"></hr>
                 </Container>
 
             </div>
