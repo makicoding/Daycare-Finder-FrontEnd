@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import './search.css';
 import LogoBar from '../components/logo_bar';
+import { Container, Row, Col } from "../components/Grid";
 
 // Run "npm start" to start React app.
 // Run "npm i" or "npm i [specific component name]" in the command line if there are any dependencies missing in the node modules folder.
