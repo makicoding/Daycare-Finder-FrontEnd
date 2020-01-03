@@ -35,8 +35,20 @@ class Search extends React.Component {
             <div>
                 <LogoBar></LogoBar>
 
-                <p>Find Daycare near:</p>
-				<input type="text" className="form-control" id="search-findDaycareNear" onChange={this.handleInputChange}	name="name" placeholder="Town, Address, Zipcode" autoComplete="off"></input>   
+                <br></br>
+
+                <Container>
+                    <Row>
+                        <Col size="col-md-3">
+                            <p>Find Daycare near:</p>
+                            <input type="text" className="form-control" id="search-findDaycareNear" onChange={this.handleInputChange}	name="name" placeholder="Town, Address, Zipcode" autoComplete="off"></input>
+                        </Col>
+
+                        <Col size="col-md-3">
+                          
+                        </Col> 
+                    </Row>
+                </Container>
 
                 <p>Opens at or before:</p>
                 <select className="chosen-select" id="search-opensAtOrBefore" onChange={this.opensAtOrBefore}>
